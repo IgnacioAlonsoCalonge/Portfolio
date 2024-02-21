@@ -1,0 +1,61 @@
+.contenedorboton{
+    padding-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contenedorboton a{
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-weight: 1000;
+    color: white;
+    font-family: "Montserrat";
+    letter-spacing: 0.2rem;
+    border: 2px solid var(--color_naranja);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.205));
+    transition: 0.5s, overflow 0s;
+  }
+  
+  .contenedorboton a:hover{
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+  .contenedorboton a::before{
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--color_naranja);
+    box-shadow: 3px 20px var(--color_naranja), 3px -20px var(--color_naranja);
+    transform: translateY(-50%);
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s, border-radius 0.5s;
+    transition-delay: 0.5s,0s,0.5s,0.5s,0.5s;
+  }
+  
+  .contenedorboton a:hover::before
+  {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    box-shadow: 5px 0 0 var(--color_naranja),5px 0 0 var(--color_naranja);
+    border-radius: 0;
+  }
+  
+  
+  .contenedorboton a span{
+    position: relative;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+  
+  .contenedorboton a span:hover{
+    color: black;
+  }

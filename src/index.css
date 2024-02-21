@@ -1,0 +1,82 @@
+
+body{
+  margin: 0;
+  font-family: "Montserrat";
+  line-height: 2.1;
+  background: linear-gradient(#0b071f,#000000);
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Righteous';
+  src: url('./assets/Righteous-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Pattaya';
+  src: url('./assets/Pattaya-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bona Nova';
+  src: url('./assets/BonaNova-Regular.ttf') format('woff2');
+}
+
+
+
+:root{
+  --color_rosa:#e42be4;
+  --color_azul:#2bdee4;
+  --color_amarillo: #fdfd24;
+  --color_naranja: rgb(236, 130, 10);
+  --color_luna: rgb(236, 146, 10);
+  --color_estrella: #fefeff;
+  --color_tecnologia: rgb(211, 89, 18);
+  --color_proyectos: #ff5500;
+
+  --instagram:#C13584;
+  --github:rgb(243, 144, 13);
+  --facebook:#3b5998;
+  --linkedin:#0e76a8;
+  --discord:#7289da;
+
+  --size-blur: 3px;
+}
+
+.contenedor_1{
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+header{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Permanent";
+  src: url('./assets/PermanentMarker-Regular.woff2') format('woff2');
+}

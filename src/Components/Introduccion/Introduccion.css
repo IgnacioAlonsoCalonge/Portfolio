@@ -1,0 +1,214 @@
+
+h1{
+  font-size: 4.2rem;
+  outline: none;
+  text-shadow: var(--color_azul) 0 0 10px,
+  var(--color_azul) 0 0 20px,
+  var(--color_azul) 0 0 40px;
+  margin-bottom: 5rem;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.3rem;
+}
+
+h2{
+  font-size: 2.3rem;
+  
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+.presentacion{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  line-height: 2rem;
+}
+
+.type_animation{
+  font-size: 3.2rem;
+  color: var(--color_azul);
+  font-weight: bold;
+  color: white;
+  text-shadow: var(--color_rosa) 0 0 10px,
+  var(--color_rosa) 0 0 20px,
+  var(--color_rosa) 0 0 40px;
+  font-family: 'Righteous', cursive;
+}
+
+.nuevo{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1/1;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position:absolute;
+
+}
+
+.contenedor_presentacion {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 10%;
+}
+
+@media screen and (max-width: 1500px){
+
+
+  .contenedor_presentacion{
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+    transition: all 1s ease;
+  }
+
+  .presentacion{
+    margin-top: 5rem;
+  }
+
+  .presentacion h1{
+    font-size: 2.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .type_animation{
+    font-size: 2.5rem;
+  }
+
+  .presentacion p{
+    font-size: 1.2rem;
+  }
+
+}
+
+@media screen and (max-width: 1200px){
+
+
+  .contenedor_presentacion{
+    grid-template-columns: 35% 60%;
+    gap: 5%;
+  }
+  .presentacion h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .presentacion h2{
+    font-size: 2rem;
+  }
+
+  .type_animation{
+    font-size: 2rem;
+  }
+
+  .presentacion p{
+    font-size: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .contenedor_presentacion{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .presentacion{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .presentacion h1{
+      font-size: 3.5rem;
+    }
+
+    .presentacion p{
+      text-align: center;
+    }
+
+    
+    .nuevo{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+  .contenedor_presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .presentacion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .presentacion h1{
+    font-size: 3.3rem;
+  }
+
+  .type_animation{
+    font-size: 2.5rem;
+  }
+
+  .presentacion h2{
+    font-size: 1.5rem;
+  }
+  
+  .nuevo{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .presentacion h1{
+    font-size: 2rem;
+  }
+  .presentacion{
+    margin-bottom: 1rem;
+    padding-left: 0;
+  }
+
+  .presentacion p{
+    font-size: 1rem;
+  }
+
+  .type_animation{
+    font-size: 2.2rem;
+  }
+
+  .presentacion h2{
+    margin-bottom: 3rem;
+  }
+
+  .contenedor_presentacion{
+   width: 90%;
+   margin: 0 auto
+  }
+}
+
