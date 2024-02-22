@@ -2,191 +2,454 @@
   margin-top: 7rem;
 }
 
-.c_foto {
+
+.c_foto{
   display: grid;
   grid-template-columns: 60% 37%;
   gap: 3%;
   margin-top: 4rem;
 }
-
+  
 .App {
-  width: 100%;
-  aspect-ratio: 1.7/1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+    width: 100%;
+    aspect-ratio: 1.7/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .descripcion p {
   font-size: 1.2rem;
 }
 
+  
 .foto_about_me {
-  height: 100%;
-  object-fit: cover;
-  z-index: 2;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
 }
-
+  
 .scene {
-  position: absolute;
-  width: 55%;
-  height: 50%;
-  top: 1.5rem;
-  left: 25%;
-  font-size: 0rem;
-  overflow: hidden;
+    position:absolute;
+    width: 55%;
+    height: 50%;
+    top: 1.5rem;
+    left: 25%;
+    font-size: 0rem;
+    overflow: hidden;
+}
+  
+.scene i{
+    position:absolute;
+    background: #ffffff;
+    border-radius:50%;
+    animation: animate linear infinite;
+}
+  
+.luna{
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 4px 4px var(--color_luna), 5px 5px 3px 3px var(--color_luna);
+    top: 20%;
+    left: 25%;
+    rotate: 100deg;
+    z-index: 1;
+}
+  
+.shootstar{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    background: var(--color_estrella);
+    filter: blur(0.5px);
+    animation-name: animate3;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 10s;
+    animation-iteration-count:infinite;
 }
 
-.scene i {
-  position: absolute;
-  background: #ffffff;
-  border-radius: 50%;
-  animation: animate linear infinite;
+.shootstar2{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 0;
+    background: var(--color_estrella);
+    filter: blur(0.5px);
+    animation-name: animate3;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 12s;
+    animation-iteration-count:infinite;
+}
+  
+.shootstar1{
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 1;
+    background: var(--color_estrella);
+    filter: blur(0.5px);
+    animation-name: animate2;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 15s;
+    animation-iteration-count:infinite;
 }
 
-.luna, .shootstar, .shootstar2, .shootstar1 {
-  width: 25px;
-  height: 25px;
-  background: transparent;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 1;
-}
-
-.shootstar, .shootstar2, .shootstar1 {
-  width: 2px;
-  height: 2px;
-  opacity: 1;
-  background: var(--color_estrella);
-  filter: blur(0.5px);
-  animation-duration: 15s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-.shootstar {
-  top: 20%;
-  left: 35%;
-  animation-delay: 10s;
-}
-
-.shootstar2 {
-  top: 35%;
-  left: 20%;
-  opacity: 0;
-  animation-delay: 12s;
-}
-
-.shootstar1 {
-  top: 25%;
-  right: 35%;
-  animation-name: animate2;
-  animation-delay: 15s;
-}
-
-.descripcion {
+.descripcion{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
 }
 
-.descripcion a {
+.descripcion a{
   text-decoration: none;
   color: rgb(255, 247, 128);
 }
 
-.descripcion h3 {
+.descripcion h3{
   display: flex;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 0rem;
   font-size: 2.5rem;
   color: white;
   position: relative;
   margin-bottom: 2.5rem;
   letter-spacing: 0.1rem;
   font-family: "Bona Nova";
-  text-shadow: 0 0 10px var(--color_naranja), 0 0 20px var(--color_naranja);
+  text-shadow: 0 0 10px var(--color_naranja),
+               0 0 20px var(--color_naranja);
 }
 
-.descripcion h3::before, .descripcion h3::after {
+.descripcion h3::before{
   content: '';
   width: 45px;
   height: 40px;
+  background: rgb(255, 255, 255);
   position: absolute;
   top: -1.35rem;
   clip-path: polygon(25% 15%, 49% 0, 71% 15%, 100% 0, 100% 46%, 0 46%, 0 0);
-}
-
-.descripcion h3::before {
-  background: rgb(255, 255, 255);
   filter: blur(12px);
   z-index: 3;
 }
 
-.descripcion h3::after {
+.descripcion h3::after{
+  content: '';
+  width: 50px;
+  height: 50px;
   background: var(--color_naranja);
+  position: absolute;
+  top: -1.5rem;
+  clip-path: polygon(25% 15%, 49% 0, 71% 15%, 100% 0, 100% 46%, 0 46%, 0 0);
 }
-
-@keyframes animate2 {
-  0% { opacity: 0; transform: translateX(0); }
-  5% { opacity: 1; }
-  95% { opacity: 1; }
-  100% { opacity: 0; transform: translateX(-100px) translateY(100px); }
-}
-
-@keyframes animate{
+    
+    
+  @keyframes animate2{
   
-  0%{
+    0%{
       opacity: 0;
       transform: translateX(0);
+    }
+  
+    0.5%,9.5%{
+      opacity: 0.1;
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+                    1px -1px var(--size-blur) var(--color_estrella),
+                    2px -2px var(--size-blur) var(--color_estrella),
+                    3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:   0px 0px var(--size-blur) 1px var(--color_estrella),
+                    1px -1px var(--size-blur) var(--color_estrella),
+                    2px -2px var(--size-blur) var(--color_estrella),
+                    3px -3px var(--size-blur) var(--color_estrella),
+                    4px -4px var(--size-blur) var(--color_estrella),
+                    5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(-100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
   }
 
-  10%,90%{
-    opacity: 1;
+  @keyframes animate1{
+  
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+  
+    0.5%{
+      opacity: 0.1;
+  
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+      1px -1px var(--size-blur) var(--color_estrella),
+      2px -2px var(--size-blur) var(--color_estrella),
+      3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:    0px 0px var(--size-blur) 1px var(--color_estrella),
+                    -1px -1px var(--size-blur) var(--color_estrella),
+                    -2px -2px var(--size-blur) var(--color_estrella),
+                    -3px -3px var(--size-blur) var(--color_estrella),
+                    -4px -4px var(--size-blur) var(--color_estrella),
+                    -5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
   }
+  
+  
+  @keyframes animate3{
+  
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+  
+    0.5%{
+      opacity: 0.1;
+  
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+      1px -1px var(--size-blur) var(--color_estrella),
+      2px -2px var(--size-blur) var(--color_estrella),
+      3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:    0px 0px var(--size-blur) 1px var(--color_estrella),
+                    -1px -1px var(--size-blur) var(--color_estrella),
+                    -2px -2px var(--size-blur) var(--color_estrella),
+                    -3px -3px var(--size-blur) var(--color_estrella),
+                    -4px -4px var(--size-blur) var(--color_estrella),
+                    -5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes animate{
+  
+      0%{
+          opacity: 0;
+          transform: translateX(0);
+      }
+  
+      10%,90%{
+        opacity: 1;
+      }
+  
+      100%{
+        opacity: 0;
+        transform:translateX(50px)
+      }
+  }
+  
+  
+  @media screen and (max-width: 1200px){
+    .c_foto{
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 4rem;
+    }
+    .descripcion h3{
+      margin-top: 2rem;
+    }
 
-  100%{
-    opacity: 0;
-    transform:translateX(50px)
-  }
+
+    .foto_about_me{
+      width: 100%;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-  .c_foto {
-    grid-template-columns: 1fr;
-  }
-  .descripcion h3 {
-    margin-top: 2rem;
-  }
-  .foto_about_me {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .descripcion p {
+@media screen and (max-width: 680px){
+  .descripcion p{
     font-size: 1rem;
     padding: 0 0.8rem;
     text-align: center;
   }
-  .scene {
+  .scene{
     top: 0;
   }
-  .descripcion h3 {
+  .descripcion h3{
     font-size: 2rem;
     margin-bottom: 0.5rem;
   }
-  .sobreMi {
+
+  .sobreMi{
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .foto_about_me {
+
+  .foto_about_me{
     height: 350px;
+  }
+
+  .descripcion{
+    margin-top: 2.5rem;
   }
 }
