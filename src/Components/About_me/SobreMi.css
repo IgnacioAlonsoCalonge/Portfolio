@@ -1,4 +1,5 @@
-.sobreMi {
+.sobreMi{
+
   margin-top: 7rem;
 }
 
@@ -447,9 +448,11 @@
 
   .foto_about_me{
     height: 350px;
+    width: 100%;
   }
 
   .descripcion{
     margin-top: 2.5rem;
   }
 }
+
