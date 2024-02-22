@@ -35,7 +35,8 @@ h2{
   text-shadow: var(--color_rosa) 0 0 10px,
   var(--color_rosa) 0 0 20px,
   var(--color_rosa) 0 0 40px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Permanent', cursive;
+  margin-left: 2rem;
 }
 
 .nuevo{
@@ -187,7 +188,7 @@ img{
 @media screen and (max-width: 600px){
 
   .presentacion h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .presentacion{
     margin-bottom: 1rem;
@@ -204,6 +205,10 @@ img{
 
   .presentacion h2{
     margin-bottom: 3rem;
+  }
+
+  .type_animation{
+    margin-left: 1rem;
   }
 
   .contenedor_presentacion{

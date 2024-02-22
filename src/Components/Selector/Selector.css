@@ -14,8 +14,8 @@
     box-shadow: 0 0px 30px -5px #e0e0df4b, 0 10px 40px -5px #e2e2e249;
 }
 
-#knowledge{
-  margin-top: 0rem;
+.knowledge{
+  margin-top: 3rem;
 }
 
 @font-face {
@@ -212,7 +212,7 @@
   
   .s4{
     background: rgb(0, 0, 0);
-    color: #da0b83;
+    color: #f0dde8;
     font-size: 1.7rem;
     font-family: "Montserrat";
     letter-spacing: 0.5rem;
@@ -225,9 +225,6 @@
       letter-spacing: 0.5rem;
     }
 
-    #knowledge{
-      margin-top: 3rem;
-    }
 
     .flexing_column p{
       width: 90%;
