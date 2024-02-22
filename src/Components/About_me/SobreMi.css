@@ -160,6 +160,252 @@
   clip-path: polygon(25% 15%, 49% 0, 71% 15%, 100% 0, 100% 46%, 0 46%, 0 0);
 }
     
+    
+  @keyframes animate2{
+  
+    0%{
+      opacity: 0;
+      transform: translateX(0);
+    }
+  
+    0.5%,9.5%{
+      opacity: 0.1;
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+                    1px -1px var(--size-blur) var(--color_estrella),
+                    2px -2px var(--size-blur) var(--color_estrella),
+                    3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:   0px 0px var(--size-blur) 1px var(--color_estrella),
+                    1px -1px var(--size-blur) var(--color_estrella),
+                    2px -2px var(--size-blur) var(--color_estrella),
+                    3px -3px var(--size-blur) var(--color_estrella),
+                    4px -4px var(--size-blur) var(--color_estrella),
+                    5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(-100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes animate1{
+  
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+  
+    0.5%{
+      opacity: 0.1;
+  
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+      1px -1px var(--size-blur) var(--color_estrella),
+      2px -2px var(--size-blur) var(--color_estrella),
+      3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:    0px 0px var(--size-blur) 1px var(--color_estrella),
+                    -1px -1px var(--size-blur) var(--color_estrella),
+                    -2px -2px var(--size-blur) var(--color_estrella),
+                    -3px -3px var(--size-blur) var(--color_estrella),
+                    -4px -4px var(--size-blur) var(--color_estrella),
+                    -5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes animate3{
+  
+    0%{
+        opacity: 0;
+        transform: translateX(0);
+    }
+  
+    0.5%{
+      opacity: 0.1;
+  
+    }
+  
+    9.5%{
+      opacity: 0.1;
+      box-shadow: 0px 0px var(--size-blur) 0px var(--color_estrella),
+      1px -1px var(--size-blur) var(--color_estrella),
+      2px -2px var(--size-blur) var(--color_estrella),
+      3px -3px var(--size-blur) var(--color_estrella);
+    }
+  
+    1%,9%{
+      opacity:0.2;
+    }
+  
+    1.5%,8.5%{
+      opacity:0.3;
+    }
+  
+    2%,8%{
+      opacity:0.4;
+    }
+  
+    2.5%,7.5%{
+      opacity:0.5;
+    }
+  
+    3%,7%{
+      opacity: 0.6;
+    }
+  
+    3.5%,6.5%{
+      opacity: 0.7;
+    }
+  
+    4%,6%{
+      opacity:0.8;
+    }
+  
+    4.5%,5.5%{
+      opacity:0.9;
+    }
+  
+    5%{
+      opacity: 1;
+      box-shadow:    0px 0px var(--size-blur) 1px var(--color_estrella),
+                    -1px -1px var(--size-blur) var(--color_estrella),
+                    -2px -2px var(--size-blur) var(--color_estrella),
+                    -3px -3px var(--size-blur) var(--color_estrella),
+                    -4px -4px var(--size-blur) var(--color_estrella),
+                    -5px -5px var(--size-blur) var(--color_estrella);
+    }
+  
+    10%{
+      opacity: 0;
+      transform:translateX(100px) translateY(100px);
+    }
+  
+    25%{
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  
+  @keyframes animate{
+  
+      0%{
+          opacity: 0;
+          transform: translateX(0);
+      }
+  
+      10%,90%{
+        opacity: 1;
+      }
+  
+      100%{
+        opacity: 0;
+        transform:translateX(50px)
+      }
+  }
   
   
   @media screen and (max-width: 1200px){
