@@ -11,7 +11,7 @@ const SobreMi = () => {
   }, []);
 
   function stars(){
-    let count = 0;
+    let count = window.innerWidth > 680 ? 40 : 10;
      let scene = document.querySelector('.scene');
      let i = 0;
    

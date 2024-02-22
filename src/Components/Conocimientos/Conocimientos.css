@@ -1,1 +1,310 @@
 
+.background  {
+    background: #f9f9f9;
+}
+
+.proyectos_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto{
+    margin-top: 4rem;
+}
+
+.proyectos_1 h3{
+    font-size: 4rem;
+    font-family: "Bebas Neue";
+    letter-spacing: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: var(--color_proyectos) 0 0 10px, var(--color_proyectos) 0 0 20px, var(--color_proyectos) 0 0 40px, var(--color_proyectos) 0 0 80px, var(--color_proyectos) 0 0 160px;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    transition: transform 7s ease-in-out;
+    margin-top: 8rem;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 225px;
+    background: #ff5500;
+    z-index: 1000;
+    transform: translateY(400px) translateX(50%) rotateX(90deg) scale(1.1);
+    filter: blur(40px);
+}
+
+.box .card .aldiablo{
+    transform-style: preserve-3d;
+    transform: none;
+    backface-visibility: hidden;
+}
+
+.box .card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: #ff5500;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(250px);
+}
+
+.wwww{
+    width: 100%;
+    height: 200px;
+}
+
+
+.box .card .imgBx{
+    position: relative;
+    width: 100%;
+    height: 325px;
+}
+
+.flexing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.box .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.propiedades_1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+.prop_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(228, 119, 17);
+    border-radius: 0.9rem;
+    height: 90%;
+    padding: 1rem 0;
+}
+
+.logos_1{
+    display: flex;
+}
+
+small{
+    width: 90%;
+    text-align: center;
+}
+
+.responsive_d{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+.responsive_d1{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.prop_1 h5{
+    font-size: 1.2rem;
+    color: rgb(119, 18, 0);
+    font-family: "Permanent";
+    margin-bottom: 0.5rem;
+    margin-top: 0.8rem;
+}
+
+.prop_1 small{
+    font-size: 1rem;
+    font-family: "Montserrat";
+}
+
+.proy_2{
+    margin-top: 2rem;
+}
+
+.proy_2 a{
+    text-decoration: none;
+    color: orange;
+    font-family: "Permanent";
+    font-size: 1.5rem;
+}
+
+@font-face {
+    font-family: 'Permanent';
+    src: url('../../assets/PermanentMarker-Regular.woff2') format('woff2');
+  }
+
+.box .card h4{
+    position: relative;
+    top: -5.6rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffd6a5;
+    font-family: "Permanent";
+    text-transform: preserve-3d;
+    transform: translateZ(30px);
+    backface-visibility: hidden;
+    text-shadow: 5px 5px 5px rgb(5, 7, 26);
+}
+
+.proy_1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+@media screen and (max-width: 1700px) {
+.propiedades_1{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+    width: 350px;
+    height: 300px;
+}
+
+.flexing{
+    gap: 9rem;
+}
+
+.box::before{
+    width: 155px;
+    height: 155px;
+    top: -5rem;
+}
+
+.box .card{
+    width: 100%;
+    height: 300px;
+    transform: rotateY(calc(var(--i) * 90deg)) translateZ(175px);
+}
+
+.box .card .imgBx{
+    height: 230px;
+}
+
+.proy_1{
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 1300px) {
+    .flexing{
+        gap: 6rem;
+    }
+
+    .propiedades_1{
+        grid-template-columns: repeat(3,1fr);
+       }
+
+       
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+
+    .box {
+        width: 350px;
+        height: 300px;
+    }
+
+    .flexing{
+        gap: 9rem;
+    }
+
+    .box::before{
+        width: 155px;
+        height: 155px;
+        top: -5rem;
+    }
+
+    .box .card{
+        width: 100%;
+        height: 300px;
+        transform: rotateY(calc(var(--i) * 90deg)) translateZ(175px);
+    }
+
+    .box .card .imgBx{
+        height: 230px;
+    }
+
+    .proy_1{
+        width: 100%;
+    }
+   
+  }
+
+  @media screen and (max-width: 700px){
+
+    .box {
+        width: 250px;
+        height: 280px;
+    }
+
+    .propiedades_1{
+
+        grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .flexing{
+        gap: 2rem;
+    }
+    
+
+    .box::before{
+        width: 140px;
+        height: 140px;
+        top: -12rem;
+    }
+
+    .box .card{
+        height: 210px;
+        transform: rotateY(calc(var(--i) * 90deg)) translateZ(125px);
+    }
+
+    .box .card .imgBx{
+        height: 165px;
+    }
+
+    .proyectos_1 h3{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .box{
+        margin-top: 2rem;
+    }
+
+    .box .card h4{
+        top: -3.85rem;
+        font-size: 2rem;
+    }
+    
+   
+  }
+
+
