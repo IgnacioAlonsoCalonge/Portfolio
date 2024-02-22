@@ -7,8 +7,36 @@ import { useEffect } from 'react'
 const SobreMi = () => {
 
   useEffect(() => {
-    
+    stars();
   }, []);
+
+  function stars(){
+    let count = 0;
+     let scene = document.querySelector('.scene');
+     let i = 0;
+   
+     while(i <  count){
+       let star = document.createElement("i");
+       let x = Math.floor(Math.random() * scene.clientWidth);
+       let y = Math.floor(Math.random() * scene.clientHeight);
+       let duration = Math.random() * 10;
+       let size = Math.random() * 2;
+   
+       star.style.left = x+'px';
+       star.style.top= y+'px';
+       star.style.width = 1+size+'px';
+       star.style.height = 1+size+'px';
+       star.style.background = "#fff";
+       star.style.boxShadow = "0 0 5px white , 0 0 12px white, 0 0 12px white, 0 0 12px white, 0 0 15px white";
+   
+       star.style.animationDuration = 10 + duration +'s';
+       star.style.animationDelay = duration + 's';
+       scene.appendChild(star);
+       
+       i++;
+     }
+   }
+
 
   return (
     <div className='sobreMi'>
