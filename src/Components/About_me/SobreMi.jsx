@@ -39,7 +39,7 @@ const SobreMi = () => {
 
 
   return (
-    <section id='sobreMi'>
+    <div className='sobreMi'>
       <div className='contenedor_1 c_foto'>
         <div className="App">
           <div  className='scene'>
@@ -64,7 +64,7 @@ const SobreMi = () => {
           <Boton2  texto_boton="Curriculum" />
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

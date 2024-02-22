@@ -28,7 +28,7 @@ const Conocimientos = () => {
 
 
   return (
-    <section id="contacto">
+    <div id="contacto">
       <div className='contenedor_1 proyectos_1'>
         <h3>Proyectos</h3>
         <div className='flexing'>
@@ -92,7 +92,7 @@ const Conocimientos = () => {
       </div>
       <div className='wwww'></div>
 
-    </section>
+    </div>
   )
 }
 
