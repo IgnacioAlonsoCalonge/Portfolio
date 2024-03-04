@@ -5,27 +5,29 @@
   justify-content: center;
 }
 
-.contenedorboton a {
+.contenedorboton button {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
   text-decoration: none;
   padding: 15px 30px;
   font-weight: 1000;
-  color: white;
+  color: rgb(255, 255, 255);
+  background: transparent;
   font-family: "Montserrat";
   letter-spacing: 0.2rem;
   border: 2px solid var(--color_naranja);
   -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0, 0, 0, 0.205));
   transition: color 0.5s, overflow 0s;
+  cursor: pointer;
 }
 
-.contenedorboton a:hover {
+.contenedorboton button:hover {
   color: black;
   overflow: hidden;
 }
 
-.contenedorboton a::before {
+.contenedorboton button::before {
   content: '';
   position: absolute;
   left: -1.5rem;
@@ -40,7 +42,7 @@
   transition-delay: 0.5s;
 }
 
-.contenedorboton a:hover::before {
+.contenedorboton button:hover::before {
   width: 100%;
   height: 100%;
   left: 0;
@@ -48,12 +50,12 @@
   border-radius: 0;
 }
 
-.contenedorboton a span {
+.contenedorboton button span {
   position: relative;
   z-index: 1000;
   transition: color 0.8s;
 }
 
-.contenedorboton a span:hover {
+.contenedorboton button span:hover {
   color: black;
 }

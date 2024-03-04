@@ -162,7 +162,7 @@
   
   .s2{
     background: rgb(0, 0, 0);
-    color: #ec329f;
+    color: #ffffff;
     font-size: 1.5rem;
     font-family: "Montserrat";
     letter-spacing: 0.5rem;
@@ -195,15 +195,15 @@
   }
 
   .a3{
-    box-shadow: 0 0px 30px -5px #eb6308, 0 10px 40px -5px rgb(240, 117, 3);
+    box-shadow: 0 0px 30px -5px #ffffff, 0 10px 40px -5px rgb(248, 248, 248);
   }
 
   .a4{
-    box-shadow: 0 0px 30px -5px #eb08a7, 0 10px 40px -5px rgb(232, 3, 240);
+    box-shadow: 0 0px 30px -5px #eb6308, 0 10px 40px -5px #eb6308;
   }
 
   .a5{
-    box-shadow: 0 0px 30px -5px #f9f7fc, 0 10px 40px -5px rgb(248, 240, 255);
+    box-shadow: 0 0px 30px -5px #d027f1, 0 10px 40px -5px #d027f1;
   }
 
   .s3 h3, .s0 h3, .s1 h3, .s2 h3, .s4 h3, .s5 h3{
